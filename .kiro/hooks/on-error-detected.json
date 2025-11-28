@@ -1,0 +1,15 @@
+{
+  "name": "Error Detection Assistant",
+  "description": "When errors are detected, offer to help debug",
+  "trigger": {
+    "type": "onDiagnostic",
+    "severity": "error"
+  },
+  "action": {
+    "type": "message",
+    "message": "I detected ${errorCount} error(s) in ${fileName}.\n\nWould you like me to:\n1. Analyze and explain the errors\n2. Suggest fixes\n3. Check related files for similar issues\n4. Update documentation if needed\n\nI'm here to help debug!"
+  },
+  "enabled": true,
+  "showNotification": true,
+  "debounce": 2000
+}

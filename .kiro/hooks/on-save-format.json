@@ -1,0 +1,15 @@
+{
+  "name": "Format on Save",
+  "description": "Automatically format code when saving files",
+  "trigger": {
+    "type": "onSave",
+    "filePattern": "**/*.{js,jsx,ts,tsx,css,md}"
+  },
+  "action": {
+    "type": "command",
+    "command": "npm run format",
+    "cwd": "${workspaceFolder}"
+  },
+  "enabled": true,
+  "showNotification": false
+}

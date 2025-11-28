@@ -1,0 +1,14 @@
+{
+  "name": "Component Creation Assistant",
+  "description": "When creating a new component, automatically generate boilerplate and documentation",
+  "trigger": {
+    "type": "onFileCreate",
+    "filePattern": "**/components/**/*.{jsx,tsx}"
+  },
+  "action": {
+    "type": "message",
+    "message": "I see you created a new component: ${fileName}. Would you like me to:\n1. Add PropTypes/TypeScript types\n2. Create a corresponding test file\n3. Add to the component index\n4. Generate documentation\n\nJust let me know what you need!"
+  },
+  "enabled": true,
+  "showNotification": true
+}

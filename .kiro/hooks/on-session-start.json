@@ -1,0 +1,13 @@
+{
+  "name": "Session Startup Assistant",
+  "description": "Welcome message and project status on session start",
+  "trigger": {
+    "type": "onSessionStart"
+  },
+  "action": {
+    "type": "message",
+    "message": "Welcome back to RealEstate Vision! 🏠\n\nProject Status:\n- Build: Ready\n- Dev Server: Run 'npm run dev' to start\n- Documentation: 18 files available\n- Last Update: Cinematic UI with glass panels\n\nWhat would you like to work on today?\n1. Add new features\n2. Fix bugs\n3. Update documentation\n4. Deploy to production\n\nI'm ready to help!"
+  },
+  "enabled": true,
+  "showNotification": true
+}

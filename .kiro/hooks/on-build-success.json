@@ -1,0 +1,14 @@
+{
+  "name": "Build Success Checker",
+  "description": "After successful build, run diagnostics and update documentation",
+  "trigger": {
+    "type": "onCommand",
+    "command": "npm run build"
+  },
+  "action": {
+    "type": "message",
+    "message": "Build completed successfully! 🎉\n\nWould you like me to:\n1. Run diagnostics to check for issues\n2. Update the bundle size in documentation\n3. Generate a deployment checklist\n4. Create release notes\n\nLet me know how I can help!"
+  },
+  "enabled": true,
+  "showNotification": true
+}
