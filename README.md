@@ -4,7 +4,7 @@
 
 A cinematic "Iron Man HUD" style dashboard that orchestrates 5 AI agents to analyze real estate properties in seconds. Features live satellite imagery, interactive 3D models, ML price predictions, and a stunning glass morphism UI.
 
-**🏆 Hackathon Submission** | [Demo](http://localhost:5173) | [Kiro Usage Writeup](./KIRO_USAGE_WRITEUP.md) | [Submission Details](./HACKATHON_SUBMISSION.md)
+**🏆 Hackathon Submission** | [Demo](./DEMO.md) | [Kiro Usage Writeup](./KIRO_USAGE_WRITEUP.md) | [Submission Details](./HACKATHON_SUBMISSION.md)
 
 ## ⚡ Quick Start
 
@@ -55,7 +55,7 @@ Open http://localhost:5173 in your browser.
 
 - **Frontend**: React + Vite + Tailwind CSS
 - **3D Engine**: Three.js + React Three Fiber + Drei
-- **Maps**: React Map GL + Mapbox (free tier)
+- **Maps**: React Map GL + leaflet
 - **Charts**: Recharts
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
@@ -81,13 +81,6 @@ src/
 
 ## 🔧 Configuration
 
-### Mapbox Token (Optional)
-
-To enable real satellite imagery:
-
-1. Get a free token from [mapbox.com](https://mapbox.com)
-2. Replace `MAPBOX_TOKEN` in `src/components/map/SatelliteView.jsx`
-
 ### 3D Models
 
 Place `.glb` files in `public/models/` and update the path in the agents.
@@ -111,13 +104,6 @@ return <primitive object={scene} />;
 ### Enhance ML Model
 
 Replace the simple linear regression in `MLValuationAgent.js` with a trained scikit-learn model or ONNX runtime.
-
-## 🏆 Hackathon Tips
-
-- **Demo Addresses**: Add more mock data in `MarketAnalystAgent.js`
-- **Visual Impact**: The satellite flyover animation runs automatically
-- **Progress Feedback**: All agents show real-time status updates
-- **Responsive Design**: Works on desktop and tablet
 
 ## 📝 License
 
